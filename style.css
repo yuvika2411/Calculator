@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #bcc8f0;
+    height: 100vhh;
+}
+
+.background-section {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    color: white;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container1 {
+
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-container {
+    margin: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.quote-text:before,
+.quote-text:after {
+    content: open-quote;
+    font-size: 1.2em;
+    color: #999;
+}
+
+.quote-text:after {
+    content: close-quote;
+}
+
+.container {
+    margin: 30px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calculator {
+    background: #3a4452;
+    border: 3px solid #0cd808;
+    box-shadow: 0 0 1px #b3ff51, 0 0 2px #b3ff51, 0 0 6px #b3ff51, 0 0 12px #b3ff51, inset 0 0 1px #b3ff51, inset 0 0 2px #b3ff51, inset 0 0 6px #b3ff51, inset 0 0 12px #b3ff51;
+    padding: 20px;
+    border-radius: 10px;
+    border: #33ffd8;
+}
+
+
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal {
+    width: 145px;
+}
+
+form input.operator {
+    color: #33ffd8;
+
+}
